@@ -79,3 +79,6 @@ sequenceDiagram
     server-->>browser: HTML file
     deactivate server
 ```
+0.6: Uusi muistiinpano
+```mermaid
+```
