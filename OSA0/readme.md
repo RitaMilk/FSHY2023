@@ -68,4 +68,14 @@ sequenceDiagram
     activate server
     server-->>browser: the JavaScript file
     deactivate server
+    
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    activate server
+    server-->>browser: [{"content":"test","date":"2023-02-21T12:54:43.504Z"}...{"content":"kariz kivilahti was here","date":"2023-02-21T20:34:08.677Z"},{"content":"App logic is fun","date":"2023-02-21T20:35:13.716Z"}]
+    deactivate server
+    
+     browser->>server: GET https://studies.cs.helsinki.fi/favicon.ico
+    activate server
+    server-->>browser: HTML file
+    deactivate server
 ```
