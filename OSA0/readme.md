@@ -1,5 +1,5 @@
 ```mermaid
-NOTES: 0.4: uusi muistiinpano
+NOTE: 0.4: uusi muistiinpano
 sequenceDiagram
     participant browser
     participant server
