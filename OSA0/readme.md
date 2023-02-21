@@ -5,7 +5,7 @@
 sequenceDiagram
     participant browser
     participant server
-    participant server2
+ 
     
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_notes
     activate server
@@ -40,5 +40,32 @@ sequenceDiagram
     browser->>server: GET https://studies.cs.helsinki.fi/favicon.ico
     activate server
     server-->>browser: HTML file
+    deactivate server
+```
+0.5: Single Page App
+```mermaid
+
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    activate server
+    server-->>browser: HTML document
+    deactivate server
+	
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    activate server
+    server-->>browser: the css file
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+    activate server
+    server-->>browser: the JavaScript file
+    deactivate server
+
+    browser->>server: GET chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/installHook.js
+    activate server
+    server-->>browser: the JavaScript file
     deactivate server
 ```
