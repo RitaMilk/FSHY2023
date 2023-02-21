@@ -1,6 +1,5 @@
-Here is a simple flow chart:
-
 ```mermaid
+NOTES: 0.4: uusi muistiinpano
 sequenceDiagram
     participant browser
     participant server
