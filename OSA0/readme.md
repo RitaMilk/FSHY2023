@@ -4,7 +4,7 @@ sequenceDiagram
     participant browser
     participant server
     participant server2
-    NOTE: 0.4: uusi muistiinpano
+    NOTE over: 0.4: uusi muistiinpano
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_notes
     activate server
     server-->>browser: 302
